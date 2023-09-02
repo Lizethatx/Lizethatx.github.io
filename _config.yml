@@ -1,0 +1,146 @@
+# Site
+repository: Lizethatx/Lizethatx.github.io
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Lizeth Avendaño Garcia
+title: Computer Engineering Student
+email: avendano.lizeth.1@gmail.com
+email_title: Email 
+#phone: Your phone number (optional)
+# phone_title: Phone (Phone title override)
+#website: Your website (eg. https://google.com)(optional)
+# website_title: Web (Website title override)
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+
+github_username:  Lizethatx
+#stackoverflow_username: "00000001"
+#dribbble_username: jekyll
+facebook_username: Lizeth Avendaño
+#flickr_username: jekyll
+instagram_username: lizeth.atx
+linkedin_username: Lizeth Avendaño
+#xing_username: jekyll
+#pinterest_username: jekyll
+youtube_username: lizethatx
+#orcid_username: 0000-0000-0000-0000
+#googlescholar_username: D847cGsAAAAJ
+
+# Additional icon links
+#additional_links:
+- #title: Link name
+  #icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+  #url: Link url (eg. https://google.com)
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+about_title: About Me 
+about_profile_image: /images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  
+  -Hi, my name's <mark>Lizeth Avendaño</mark>, currently I am student Computer Engineering at CUCEI. I like web development, focused on the back-end.
+  -I am seeking to gain work experience in a professional setting to apply my knowledge and skills, and contribute to the development of innovative solutions in the field of computing.
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any 
+                      # other value (or no value) means no border will be displayed
+        title: SalesWarehouse
+        #link: https://github.com/Lizethatx/VentasAlmacen
+        link_text: SalesWarehouse
+        additional_links:
+          - title:  SalesWarehouse
+            icon: fab fa-github
+            url: https://github.com/Lizethatx/VentasAlmacen
+        #quote: >
+          #Short overview of the project (optional)
+        description: | # this will include new lines to allow paragraphs
+          Platform development for a youth store to make sales and have inventory control.
+  - title: Experience
+    layout: list
+    content:
+      - layout: right
+        title: Jabil
+        sub_title: Software developer Internship 
+        caption: 4 june - present
+        link: https://www.jabil.mx/
+        #quote: >
+          #Short description of the company (optional)
+        description: | # this will include new lines to allow paragraphs
+          Software development internship in the Automation area.
+          Creation and maintenance of projects in the BOM platform
+  - title: Education
+    layout: list
+    content:
+      - layout: top-right
+        title: CUCEI, Universidad de Guadalajara
+        sub_title: Bachelor's Degree in Computer Engineering
+        caption: 2020 - present
+        #quote: >
+          #Short institution or course description (optional)
+        description: | # this will include new lines to allow paragraphs
+          I have been obtain a solid academic background in programming. Creative and analytical problem-solving abilities. Also, ability to work effectively in a team, with clear
+          and collaborative communication
+  - title: A Little More About Me
+    layout: text
+    content:  # this will include new lines to allow paragraphs
+      title: Skills
+      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+      description: 
+      -Python
+      -C++
+      -C#
+      -PHP
+      -HTML/ CSS
+      -MySQL
+      -Github
+      title: Interests
+      description: 
+      I like to listen to music, play with my friends, read philosophy, paint and play instruments like Ukulele and melodica.
+
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
